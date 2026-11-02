@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sehat Care Hospital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🏥 Sehat<span>Care</span></div>
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#departments">Departments</a>
+      <a href="#doctors">Doctors</a>
+      <a href="#packages">Packages</a>
+      <a href="#appointment">Appointment</a>
+    </nav>
+    <div class="actions">
+      <button id="cartBtn">🛒 <span id="cartCount">0</span></button>
+      <button id="themeBtn">🌙</button>
+      <button id="menuBtn" class="menu-btn">☰</button>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <p class="tag">🚑 24x7 Emergency Care</p>
+    <h1>Your Health, <span>Our Priority</span></h1>
+    <p>Best doctors, modern labs and caring staff, all in one place.</p>
+    <a href="#appointment" class="btn">Book Appointment</a>
+    <a href="#doctors" class="btn btn-outline">Our Doctors</a>
+    <div class="stats">
+      <div><b>25+</b>Doctors</div>
+      <div><b>10k+</b>Patients</div>
+      <div><b>24x7</b>Emergency</div>
+    </div>
+  </section>
+
+  <section id="departments">
+    <h2 class="title">Our Departments</h2>
+    <div class="grid">
+      <div class="dept">❤️<h3>Cardiology</h3><p>Heart care</p></div>
+      <div class="dept">🧠<h3>Neurology</h3><p>Brain and nerves</p></div>
+      <div class="dept">🦴<h3>Orthopedics</h3><p>Bones and joints</p></div>
+      <div class="dept">👶<h3>Pediatrics</h3><p>Child care</p></div>
+      <div class="dept">🦷<h3>Dental</h3><p>Teeth care</p></div>
+      <div class="dept">🧴<h3>Dermatology</h3><p>Skin and hair</p></div>
+    </div>
+  </section>
+
+
+  <section id="doctors">
+    <h2 class="title">Our Doctors</h2>
+    <input type="text" id="search" placeholder="🔍 Search doctor...">
+    <div class="filters" id="filters">
+      <button class="active" data-dept="all">All</button>
+      <button data-dept="cardiology">Cardiology</button>
+      <button data-dept="neurology">Neurology</button>
+      <button data-dept="pediatrics">Pediatrics</button>
+      <button data-dept="dental">Dental</button>
+      <button data-dept="dermatology">Dermatology</button>
+    </div>
+    <div class="grid" id="doctorList"></div>
+  </section>
+
+  <section id="packages">
+    <h2 class="title">Health Packages</h2>
+    <div class="grid">
+      <div class="pack">
+        <h3>Basic Checkup</h3>
+        <p class="price">₹499</p>
+        <p>Blood test + BP + Sugar</p>
+        <button class="add" data-name="Basic Checkup" data-price="499">Add</button>
+      </div>
+      <div class="pack">
+        <h3>Full Body</h3>
+        <p class="price">₹1499</p>
+        <p>60+ tests + Doctor consult</p>
+        <button class="add" data-name="Full Body" data-price="1499">Add</button>
+      </div>
+      <div class="pack">
+        <h3>Heart Care</h3>
+        <p class="price">₹999</p>
+        <p>ECG + Lipid profile</p>
+        <button class="add" data-name="Heart Care" data-price="999">Add</button>
+      </div>
+      <div class="pack">
+        <h3>Senior Citizen</h3>
+        <p class="price">₹1999</p>
+        <p>80+ tests + Home sample</p>
+        <button class="add" data-name="Senior Citizen" data-price="1999">Add</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2 class="title">FAQs</h2>
+    <div class="faq-item">
+      <div class="faq-q">⏰ What are the OPD timings?</div>
+      <div class="faq-a">OPD is open 9 AM to 8 PM, Monday to Saturday.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">🧾 When will I get my test report?</div>
+      <div class="faq-a">Most reports are ready in 24 hours, on WhatsApp and email.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">💳 Do you accept health insurance?</div>
+      <div class="faq-a">Yes, cashless treatment with all major insurance companies.</div>
+    </div>
+  </section>
+
+  <button id="topBtn" class="top-btn">⬆</button>
+
+  <section id="appointment">
+    <h2 class="title">Book Appointment</h2>
+    <form id="form" class="form">
+      <input id="pname" placeholder="Patient name">
+      <input id="phone" placeholder="Mobile number">
+      <select id="doctor">
+        <option value="">Select doctor</option>
+      </select>
+      <input type="date" id="date">
+      <p class="error" id="error"></p>
+      <button class="btn" type="submit">Confirm Booking</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>🏥 Sehat Care Hospital, MG Road, New Delhi</p>
+    <p>📞 Emergency: 108 | ⏰ OPD: 9 AM - 8 PM</p>
+    <p>© 2026 Sehat Care | Made by Tech Bro Z</p>
+  </footer>
+
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <h3 id="modalTitle"></h3>
+      <div id="modalBody"></div>
+      <button class="btn" id="closeModal">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -2,7 +2,7 @@
 
 Ek complete, responsive **Hospital website** jo humne YouTube video mein **zero se** banayi — sirf HTML, CSS aur JavaScript (koi framework nahi).
 
-🎬 **YouTube video (Hindi):** (jaldi aa raha hai)
+🎬 **YouTube video (Hindi):** https://www.youtube.com/watch?v=MVfJz_7QDyE
 🌐 **Live demo:** https://nm621532-byte.github.io/hospital-website-techbroz/
 💻 **Code khud chala ke dekho (free editor):** https://techbroz-code.sites.tab.bot/?v=hospital-website
 ⬇️ **Download (zip):** https://github.com/nm621532-byte/hospital-website-techbroz/raw/main/release/sehat-care-hospital-website-v1.0.zip

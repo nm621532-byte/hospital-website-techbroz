@@ -198,3 +198,24 @@ window.addEventListener("scroll", () => {
 });
 
 topBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+
+// 12. Testimonials slider
+const slides = document.querySelectorAll(".slide");
+let current = 0;
+
+function showSlide(n) {
+  slides[current].classList.remove("active");
+  current = (n + slides.length) % slides.length;
+  slides[current].classList.add("active");
+}
+
+document.getElementById("nextBtn").onclick = () => showSlide(current + 1);
+document.getElementById("prevBtn").onclick = () => showSlide(current - 1);
+
+setInterval(() => showSlide(current + 1), 4000);
+
+// 13. WhatsApp button
+const waBtn = document.getElementById("waBtn");
+const msg = "Hello Sehat Care, I want to book an appointment";
+waBtn.href = "https://wa.me/919876543210?text=" + encodeURIComponent(msg);
+console.log(waBtn.href);

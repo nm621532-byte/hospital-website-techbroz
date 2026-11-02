@@ -5,7 +5,7 @@ Ek complete, responsive **Hospital website** jo humne YouTube video mein **zero 
 🎬 **YouTube video (Hindi):** (jaldi aa raha hai)
 🌐 **Live demo:** https://nm621532-byte.github.io/hospital-website-techbroz/
 💻 **Code khud chala ke dekho (free editor):** https://techbroz-code.sites.tab.bot/?v=hospital-website
-⬇️ **Download (zip):** Releases → v1.0
+⬇️ **Download (zip):** https://github.com/nm621532-byte/hospital-website-techbroz/raw/main/release/sehat-care-hospital-website-v1.0.zip
 
 ## ✨ Features
 - Header + sticky navigation, hero section, stats
@@ -18,11 +18,13 @@ Ek complete, responsive **Hospital website** jo humne YouTube video mein **zero 
 - 🌙 **Dark mode** (CSS variables)
 - 📱 **Responsive** mobile view + hamburger menu
 - FAQ accordion + back-to-top button
+- 💬 Testimonials **slider** (auto-play `setInterval`) + **WhatsApp button** (`encodeURIComponent`)
 
-## 🐞 Video mein fix kiye 3 real bugs
+## 🐞 Video mein fix kiye 4 real bugs
 1. `Cardiology` vs `cardiology` → `toLowerCase()`
 2. `"499" + "1499"` = `04991499` (string jud gayi) → `Number()`
 3. localStorage `SecurityError` (sandbox) → `try...catch`
+4. Slider `slides[3]` undefined → `% modulo`
 
 ## ▶️ Kaise chalayein
 ```bash
